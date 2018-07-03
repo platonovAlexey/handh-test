@@ -11,7 +11,7 @@ var GM = {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: coordinates,
                 zoom: zoom,
-                disableDefaultUI: true, // элементы управления
+                disableDefaultUI: true,
                 scrollwheel: true
             }),
 
