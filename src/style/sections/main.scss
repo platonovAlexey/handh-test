@@ -1,0 +1,182 @@
+#map{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.info{
+	&-block{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    padding-top: 23px;
+    padding-left: 98px;
+    background: #fff;
+    overflow-y: auto;
+    z-index: 100;
+    
+	}
+	&-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+	}
+}
+
+.triangle{
+    display: block;
+    border-top: 35px solid transparent;
+    border-right: 15px solid #fff;
+    border-bottom: 35px solid transparent;
+    position: absolute;
+    bottom: 230px;
+    right: 30%;
+    z-index: 1000;
+}
+
+.logo{
+	text-align: left;
+	position: relative;
+	left: -13px;
+	margin-bottom: 40px;
+}
+
+.menu{
+	margin-bottom: 480px;
+	&__list{
+		list-style: none;
+	}
+	&__item{
+		text-transform: uppercase;
+		margin-bottom: 9px;
+	}
+	&__link{
+		color: $blackColor;
+		font-weight: 300;
+		&--active{
+			font-weight: 600;
+		}
+	}
+}
+
+.adress{
+	margin-bottom: 60px;
+	text-align: left;
+
+	&-row{
+		position: relative;
+	}
+
+	&__msk{
+		color: $grayColor;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+		margin-bottom: 20px;
+	}
+	&__spb{
+		@extend .adress__msk;
+		color: $blackColor;
+	}
+	&__title{
+		margin-bottom: 0;
+		&--msk{
+			&:before{
+				content: '';
+				display: block;
+				width: 26px;
+				height:25px;
+				background: url('../../img/star.svg') no-repeat 50% 50%;
+				background-size: contain;
+				position: absolute;
+				left: -45px;
+				top: -2px;
+				height: 20px;
+				width: 20px;
+			}
+		}
+		&--spb{
+			&:before{
+				content: '';
+				display: block;
+				width: 24px;
+				height:25px;
+				background: url('../../img/anchor.svg') no-repeat 50% 50%;
+				background-size: contain;
+				position: absolute;
+				left: -45px;
+				top: -2px;
+				height: 20px;
+				width: 20px;
+			}
+		}
+	}
+	&__text{
+		margin-bottom: 0;
+	}
+}
+
+.advertising{
+	color: $grayColor;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	margin-bottom: 17px;
+
+	&-row{
+		margin-bottom: 4px;
+	}
+
+	&__title{
+		margin-bottom: 0;
+	}
+
+	&__text{
+		margin-bottom: 0;
+	}
+
+	&__link{
+		color: $linkColor;
+		text-decoration: none;
+		&:hover{
+			color: $linkColor;
+			text-decoration: underline;
+		}
+	}
+}
+
+.social{
+	&__list{
+		position: relative;
+		list-style: none;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: flex-start;
+	}
+	&__item{
+		vertical-align: top;
+		width: 30px;
+		height: 30px;
+		display: block;
+		float: left;
+		margin-right: 10px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		
+	}
+	&__icon{
+		fill: $linkColor;
+		&:hover{
+			fill: $blackColor;
+		}
+	}
+}
+
+.inner-wrapper{
+	width: 80%;
+}
